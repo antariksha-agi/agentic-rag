@@ -1,5 +1,5 @@
 
-🤖 Agentic RAG
+ Agentic RAG
 
 «An intelligent Agentic Retrieval-Augmented Generation (RAG) system built with LangGraph, LangChain, ChromaDB, Hugging Face embeddings, FastAPI, and LLMs.»
 
@@ -7,7 +7,7 @@ Agentic RAG goes beyond traditional RAG by introducing an evaluation and decisio
 
 ---
 
-🚀 Overview
+Overview
 
 Traditional RAG generally follows:
 
@@ -46,23 +46,23 @@ The workflow is orchestrated using LangGraph, allowing the application to condit
 
 ---
 
-✨ Key Features
+ Key Features
 
-- 📄 PDF document ingestion
-- ✂️ Recursive text chunking
-- 🧠 Hugging Face sentence embeddings
-- 🗄️ ChromaDB vector storage
-- 🔎 Semantic similarity search
-- 🤖 LLM-powered document relevance grading
-- 🔄 Agentic retrieval loop
-- 🧩 LangGraph state-based workflow
-- ⚡ FastAPI backend
-- 🔌 API-based document ingestion and querying
-- 🛡️ Retrieval attempt limit to prevent infinite loops
+-  PDF document ingestion
+-  Recursive text chunking
+-  Hugging Face sentence embeddings
+-  ChromaDB vector storage
+-  Semantic similarity search
+- LLM-powered document relevance grading
+-  Agentic retrieval loop
+-  LangGraph state-based workflow
+-  FastAPI backend
+-  API-based document ingestion and querying
+-  Retrieval attempt limit to prevent infinite loops
 
 ---
 
-🧠 What Makes It "Agentic"?
+ What Makes It "Agentic"?
 
 A conventional RAG pipeline assumes that the first retrieved documents are good enough.
 
@@ -86,7 +86,7 @@ This is implemented using LangGraph's conditional edges.
 
 ---
 
-🏗️ Architecture
+ Architecture
 
                          ┌───────────────┐
                          │    FastAPI    │
@@ -135,7 +135,7 @@ This is implemented using LangGraph's conditional edges.
 
 ---
 
-📁 Project Structure
+ Project Structure
 
 agentic-rag/
 │
@@ -149,21 +149,21 @@ agentic-rag/
 
 ---
 
-⚙️ Tech Stack
+Tech Stack
 
 Technology| Purpose
-🐍 Python| Core programming language
-🦜 LangChain| RAG components and LLM integration
-🕸️ LangGraph| Agentic workflow orchestration
-🗄️ ChromaDB| Vector database
-🤗 Hugging Face| Embedding model
-⚡ FastAPI| Backend API
-📄 PyPDF| PDF document loading
-🧠 LLM| Document grading and answer generation
+ Python| Core programming language
+ LangChain| RAG components and LLM integration
+ LangGraph| Agentic workflow orchestration
+ ChromaDB| Vector database
+ Hugging Face| Embedding model
+ FastAPI| Backend API
+ PyPDF| PDF document loading
+ LLM| Document grading and answer generation
 
 ---
 
-🔄 Workflow
+ Workflow
 
 1. Document Ingestion
 
@@ -270,7 +270,7 @@ The retry loop is bounded to prevent infinite execution.
 
 ---
 
-🧩 LangGraph State
+ LangGraph State
 
 The workflow maintains state throughout execution.
 
@@ -286,7 +286,7 @@ The state allows different nodes in the graph to communicate and update the work
 
 ---
 
-🔌 API
+ API
 
 The application exposes a FastAPI backend.
 
@@ -314,7 +314,7 @@ Example response:
 
 ---
 
-🛠️ Installation
+ Installation
 
 1. Clone the repository
 
@@ -344,7 +344,7 @@ pip install -r requirements.txt
 
 ---
 
-🔐 Environment Variables
+ Environment Variables
 
 Create a ".env" file in the project root.
 
@@ -354,7 +354,7 @@ Example:
 
 OPENAI_API_KEY=your_api_key_here
 
-«⚠️ Never commit your API keys to GitHub.»
+« Never commit your API keys to GitHub.»
 
 Add ".env" to ".gitignore":
 
@@ -364,7 +364,7 @@ __pycache__/
 
 ---
 
-▶️ Running the Application
+ Running the Application
 
 Start the FastAPI server:
 
@@ -380,7 +380,7 @@ FastAPI's interactive documentation can be accessed through:
 
 ---
 
-🧪 Example
+ Example
 
 Suppose you upload a document containing information about machine learning.
 
@@ -410,7 +410,7 @@ The final answer is generated using the retrieved context rather than relying pu
 
 ---
 
-🧠 Why LangGraph?
+ Why LangGraph?
 
 LangGraph is used because Agentic RAG workflows are naturally represented as graphs with state and conditional transitions.
 
@@ -438,7 +438,7 @@ This makes it easier to extend the system with additional agentic behaviors.
 
 ---
 
-🚧 Current Limitations
+ Current Limitations
 
 This project is an evolving implementation of Agentic RAG.
 
@@ -458,9 +458,9 @@ These are intentional areas for future development rather than hidden shortcomin
 
 ---
 
-🛣️ Roadmap
+ Roadmap
 
-✅ Phase 1 — Basic Agentic RAG
+ Phase 1 — Basic Agentic RAG
 
 - [x] PDF ingestion
 - [x] Text splitting
@@ -472,7 +472,7 @@ These are intentional areas for future development rather than hidden shortcomin
 - [x] Retrieval retry loop
 - [x] FastAPI backend
 
-🔨 Phase 2 — Smarter Retrieval
+ Phase 2 — Smarter Retrieval
 
 - [ ] Query rewriting
 - [ ] Retrieval with rewritten queries
@@ -481,7 +481,7 @@ These are intentional areas for future development rather than hidden shortcomin
 - [ ] Metadata-aware retrieval
 - [ ] Source/page tracking
 
-🚀 Phase 3 — Advanced Agentic RAG
+ Phase 3 — Advanced Agentic RAG
 
 - [ ] Hybrid search
 - [ ] BM25 + vector retrieval
@@ -492,7 +492,7 @@ These are intentional areas for future development rather than hidden shortcomin
 - [ ] Hallucination detection
 - [ ] Self-correction loop
 
-🏭 Phase 4 — Production
+ Phase 4 — Production
 
 - [ ] Persistent vector storage
 - [ ] Docker
@@ -507,7 +507,7 @@ These are intentional areas for future development rather than hidden shortcomin
 
 ---
 
-📊 Future Evaluation
+ Future Evaluation
 
 The goal is not simply to demonstrate that the system produces answers.
 
@@ -526,7 +526,7 @@ This will make it possible to measure whether agentic behavior actually improves
 
 ---
 
-🎯 Project Goals
+ Project Goals
 
 This project was built to explore how modern AI systems can combine:
 
@@ -548,8 +548,7 @@ The long-term goal is to evolve this prototype into a robust production-grade Ag
 
 ---
 
-👨‍💻 Author
-
+ Author
 Antariksha
 
 GitHub:
@@ -560,7 +559,7 @@ https://github.com/antariksha-agi/agentic-rag
 
 ---
 
-⭐ Support
+ Support
 
 If you found this project useful or interesting, consider giving the repository a ⭐.
 
@@ -568,6 +567,6 @@ It helps the project get noticed and motivates further development.
 
 ---
 
-📜 License
+ License
 
 This project is licensed under the terms specified in the repository's "LICENSE" file.# agentic-rag
